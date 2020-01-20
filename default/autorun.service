@@ -1,0 +1,9 @@
+[Unit]
+Description = A replacement for /etc/rc.local
+
+[Service]
+Type = one-shot
+ExecStart = /bin/bash /etc/rc.local
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Arduino Control panel</title>
+        <link rel="stylesheet" href="../static/style.css">
+    </head>
+    <body>
+
+        <div class="header">
+            <center>
+                <h3> </h3>
+                <h2 class="title-text">Control Panel</h2>
+                <h3> </h3>
+            </center>
+        </div>
+
+        <div class="debug">  
+            <a href="/restore"><h4>Restore Arduino Bootloader</h4></a>
+            <a href="/test"><h4>Test the Arduino by running the blink program</h4></a>
+        </div>
+
+        <div class="norm">
+            <a href="/flash"><h4>Flash custom program at /home/pi/(Via SPI, will erase Bootloader)</h4></a>
+            <a href="/fileserver"><h4>Run the file server to recive the sketch binary</h4></a>
+        </div>
+
+        <div class="sys">
+            <a href="/reboot"><h4>Reboot</h4></a>
+            <a href="/shutdown"><h4>Shutdown</h4></a>
+        </div>
+
+    </body>
+</html>
+

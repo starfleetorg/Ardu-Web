@@ -1,0 +1,38 @@
+body {
+  background-color: #1e1e1e
+}
+
+.header {
+  background-color: #333333
+}
+
+.title-text {
+  color: whitesmoke;
+  padding: 14px 16px;
+}
+
+.debug {
+  border-style: solid;
+  border-color: #68217a;
+}
+
+.norm {
+  border-style: solid;
+  border-color: #68217a;
+}
+
+.sys {
+  border-style: solid;
+  border-color: #68217a;
+}
+
+
+a {
+  color: #9c9c9c;
+  background-color: #1e1e1e
+}
+
+a:hover {
+  color: white
+}
+

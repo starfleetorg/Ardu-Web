@@ -1,0 +1,21 @@
+#!/usr/bin/env python3
+import sys
+import os
+
+script, arg = sys.argv
+
+if arg == "-r":
+    print("[i] Restoring Bootloader...")
+    os.system("sudo avrdude -p m328p -c gpio -e -U flash:w:/opt/starfleet/AVR/arduino-firmware/build-uno/main.hex")
+
+elif arg == "-t":
+    print("[i] Flashing Test Firmware...")
+    os.system("sudo avrdude -p m328p -c gpio -e -U flash:w:/opt/starfleet/AVR/blink/main/build-uno/main.hex")
+
+elif arg == "-f":
+    print("[i] Flashing /home/pi/program.hex...")
+    os.system("sudo avrdude -p m328p -c gpio -e -U flash:w:/home/pi/program.hex")
+
+elif arg == "-fileserver":
+    print("[i] File server started on port 1234...")
+    os.system("sudo nc -l -p 1234 > /home/pi/program.hex &")
